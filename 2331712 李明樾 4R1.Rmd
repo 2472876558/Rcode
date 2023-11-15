@@ -1,0 +1,38 @@
+---
+title: "Assignment 1"
+author: "2331712 李明樾"
+date: "2023-11-15"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+# 任务1 Read the tidyverse style guide and Chapter 5 of R for data science (click)
+
+[link](https://r4ds.had.co.nz/transform.html)
+
+# 任务2 Load your own .csv file into R, report the dimension of your data frame, then generate a scatter plot using the plot() function.
+
+```{r echo=FALSE}
+df <- read.csv("2023.07.17.csv")
+dim(df)
+plot(df[,1],df[,2])
+```
+
+# 任务3 Write a loop to calculate the mean value of a random numeric vector of length 50
+
+```{r echo=FALSE}
+A <- rnorm(50)
+sumA <- 0
+for (i in 1:length(A)) {
+  sumA <- sumA + A[i]
+}
+meanA <- sumA / length(A)
+meanA
+```
+
+# 任务4 Prepare your solution in a Rscript file and report your outputs in a MS Word document.
+
+# 任务5 Familiarize with the syntax of Markdown and R Markdown or (Quarto) (ch21 of r4ds or ch28 of r4ds 2ed)
+
+[link](https://r4ds.had.co.nz/)
